@@ -4,10 +4,18 @@
 # This case is about the io stdin <> diamonds operator and so on grammer
 #
 
+=ex1
+	while(<STDIN>){
+#if add chomp, it will cut the \n, looks like xxaa instead of xx\naa
+		print "each line is : $_";
+	}
+=cut
 
-while(defined(<STDIN>)){
-	print "each line is : ";
-
-}
+=ex2
+#up can be equal to below..
+	while(<>){
+		print "each line is : $_";
+	}
+=cut
 
 
