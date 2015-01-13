@@ -37,4 +37,14 @@
 =cut
 
 
+=HERE the ex3
+# get the last index of arr
+# $#arr
+# output 9
+	my @arr = (1..10);
+	$arr_len = $#arr;
+	print $arr_len;
+=cut
+
+
 

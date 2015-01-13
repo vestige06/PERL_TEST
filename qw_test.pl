@@ -18,3 +18,14 @@ print @arr1;
 
 @arr2 = qw /5 6 7 8/;
 print @arr2;
+
+# qw also can write style below
+#
+
+@arr3 = qw(
+
+fred
+barney
+wilma
+);
+print @arr3;
