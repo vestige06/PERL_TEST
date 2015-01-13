@@ -19,3 +19,9 @@
 =cut
 
 
+open AA,"<~/PERL_TEST/mysql_test.pl";
+print AA;
+while(defined(AA)){
+	print $_;
+}
+
