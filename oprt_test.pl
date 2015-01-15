@@ -5,7 +5,7 @@
 #
 #
 
-
+=oprt
 # Pop 
 
 my @arr = 5..9;
@@ -40,3 +40,6 @@ print @array;
 my @rm_el = splice @array, 1, 1;
 print @rm_el."\n";
 print @array."\n";
+=cut
+
+print defined(undef);
