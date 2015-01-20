@@ -1,6 +1,6 @@
 #! /usr/bin/perl
 #
-#
+# Show the usage of localtime ..
 
 my @time = localtime;
 ($sec,$min,$hour,$mday,$mon,$year,$wday,$yday,$isdst) = localtime;

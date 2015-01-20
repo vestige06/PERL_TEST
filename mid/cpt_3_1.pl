@@ -17,6 +17,19 @@
 #parentheses, doesn’t crash the program.
 
 
-print grep /11/
-#print "@ARGV";
-#print map { " $_\n" } grep { −s < 1000 } @ARGV;
+# ans1: print the file_name 
+#print map {"$_\n"} grep { (-s) < 1000 } @ARGV;
+
+
+# ans2: 
+
+while(1){
+	print "Please enter a regular expression> ";
+	chomp( my $reg = <STDIN> );
+	last unless( defined($reg) && length $reg );
+
+	print 
+	map{"    $reg\n"}
+	grep{ eval{/$reg/}}
+	glob(".* *");
+}
